@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+.container{
+    /* Poore viewport ki height aur width leli */
+    width: 100vw;
+    height: 100vh;
+    /* min-height: 980px; */
+
+    /* As jo box hai woh horizontally and vertically center mein chahiye toh flex bana do */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.navbar ul{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.header a{
+    text-decoration: none;
+    color: grey;
+    transition: background 0.5s;
+}
+
+.header a:hover{
+    color: black
+}
+
+.card a{
+    color: blue;
+}
+
+.image img{
+width: 125px;
+height: 65px;
+margin-right: 900px;
+margin-left: 50px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.card{
+    width: 900px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+
+    /* As image,heading and para ek ke neeche ek toh flex bana do isse */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+
+
+.card h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.card p{
+    font-size: 1.4em;
+}
+
+.card a{
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.footer{
+    position:absolute;
+    bottom: 0;
+    color: black;
+    font-weight: 2px;
+    text-align: center;
+    width: 80vw;
+    font-weight: bold;
+    font-size: 15px;
+}
